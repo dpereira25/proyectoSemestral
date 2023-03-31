@@ -1,0 +1,42 @@
+.pb-5{
+    margin-bottom: 0px;
+    background-color: rgb(98, 86, 86);
+}
+
+.carousel-item img{
+
+    height: 500px;
+    width: 300px;
+}
+
+#exampleModalLabel{
+    color: red;
+}
+.container{
+    background-color: rgb(136, 123, 123);
+}
+.container h1{
+    text-align: center;
+    background-color: rgb(136, 123, 123);
+    font-family: fantasy;
+}
+.container-fluid{
+    background-color: rgb(255, 255, 255);
+}
+body{
+    background-color: rgb(136, 123, 123);
+}
+.card-body{
+    text-align: center;
+}
+.containerCards{
+    padding: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(136, 123, 123);
+}
+.containerCards img{
+    
+    height: 400px;
+    width: 290px;
+}
