@@ -13,7 +13,7 @@
     color: red;
 }
 .container{
-    background-color: rgb(136, 123, 123);
+    background-color: rgb(153, 204, 51);
 }
 .container h1{
     text-align: center;
@@ -24,7 +24,7 @@
     background-color: rgb(255, 255, 255);
 }
 body{
-    background-color: rgb(136, 123, 123);
+    background-color: white;
 }
 .card-body{
     text-align: center;
@@ -39,4 +39,9 @@ body{
     
     height: 400px;
     width: 290px;
+}
+
+#logoPagina{
+    height: 100px;
+    width: 200px;
 }
