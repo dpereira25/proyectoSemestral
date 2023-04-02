@@ -1,19 +1,20 @@
 @font-face{
     font-family: miFuente;
-    src: url('css/fonts/BillionDreams_PERSONAL.ttf');
+    src: url('fonts/BillionDreams_PERSONAL.ttf') format('truetype');
 }
 
 #exampleModalLabel{
     color: red;
 }
 
-#carritoCompra{
+.carritoCompra{
     background-color: rgb(153, 204, 51);
 }
 
 .container h1{
     text-align: center;
     font-family: miFuente;
+    font-size: 63px;
 }
 
 .container-fluid{
@@ -50,3 +51,11 @@ body{
     width: 400px;
 }
 
+#fotoCarrito{
+    height: 250px;
+    width: 250px;
+}
+
+#botonQl{
+    background-color: white;
+}
