@@ -59,3 +59,21 @@ body{
 #botonQl{
     background-color: white;
 }
+h3{
+    font-family: miFuente;
+}
+.card{
+    border-color:white;    
+}
+.cardflo img{
+    height: 250px;
+    width: 250px;
+    width: 100%;
+
+}
+.cardbon{
+    height: 100%;
+}
+.label{
+    font-family: miFuente;
+}
