@@ -90,7 +90,39 @@
     </div>
 
 
-
+    <div class="card mt-3">
+        <div class="card-body">
+          <h3 class="card-title">¿Quienes somos?</h3>
+          <p class="card-text">Somos un grupo de vecinos amantes de la jardineria al igual que tu dispuestos a ayudar a que tu jardin sea cada dia mas variado y visualmente atractivo.</p>
+          <a href="https://www.instagram.com/" class="btn btn-dark bi bi-instagram mt-1"> Instragram</a>
+          <a href="https://www.facebook.com/" class="btn btn-dark bi bi-facebook mt-1"> Facebook</a>
+      
+          <button type="button" class="btn btn-dark bi bi-send-check-fill mt-1" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"> Envianos una sugerencia</button>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Dejanos tu opinion</h1>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group mb-3">
+                      <label>Correo:</label>
+                      <input type="email" class="form-control" placeholder="example@correo.cl" id="correo-name">
+                      <label>Sugerencia:</label>
+                      <textarea class="form-control" placeholder= "Tu pagina es excelente sigue asi" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-dark">Enviar mensaje</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
