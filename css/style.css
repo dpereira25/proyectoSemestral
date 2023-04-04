@@ -74,6 +74,14 @@ h3{
 .cardbon{
     height: 100%;
 }
-.label{
+.carousel-inner img{
+    height: 500px;
+    width: 200px;
+}
+h1{
     font-family: miFuente;
+}
+label{
+    font-family: miFuente;
+    font-size: 200%;
 }

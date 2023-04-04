@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Inicio</title>
 
@@ -52,13 +53,7 @@
       </div>
     </div>
   </nav>
-  <div class="container pb-3">
-    <h1>Bienvenido entusiasta de la jardineria</h1>
-  </div>
-
   <!--Carrusel-->
-  <div class="container mb-5 mt-5">
-
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
@@ -70,13 +65,13 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/plantainicio.jpg" class="d-block w-100" alt="...">
+          <img src="img/mariposaInicio.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="img/flores.jpg" class="d-block w-100" alt="...">
+          <img src="img/cactusInicio.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="img/pasto.jpg" class="d-block w-100" alt="...">
+          <img src="img/azulesInicio.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -91,15 +86,8 @@
       </button>
     </div>
 
-  </div>
-
-<div class="card">
-  <div class="card-body">
-    <h3 class="card-title">¿Quienes somos?</h3>
-    <p class="card-text">Somos un grupo de vecinos amantes de la jardineria al igual que tu dispuestos a ayudar a que tu jardin sea cada dia mas variado y visualmente atractivo.</p>
-    <a href="https://www.instagram.com/" class="btn btn-dark">Instragram</a>
-    <a href="https://www.facebook.com/" class="btn btn-dark">Facebook</a>
-  </div>
+<div class="container pb-3 mt-5">
+  <h1>Bienvenido entusiasta de la jardineria</h1>
 </div>
 
 <div class="container mt-5">
@@ -133,6 +121,40 @@
       </div>
     </div>
   </div>
+
+<div class="card mt-3">
+  <div class="card-body">
+    <h3 class="card-title">¿Quienes somos?</h3>
+    <p class="card-text">Somos un grupo de vecinos amantes de la jardineria al igual que tu dispuestos a ayudar a que tu jardin sea cada dia mas variado y visualmente atractivo.</p>
+    <a href="https://www.instagram.com/" class="btn btn-dark bi bi-instagram mt-1"> Instragram</a>
+    <a href="https://www.facebook.com/" class="btn btn-dark bi bi-facebook mt-1"> Facebook</a>
+
+    <button type="button" class="btn btn-dark bi bi-send-check-fill mt-1" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"> Envianos una sugerencia</button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Dejanos tu opinion</h1>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group mb-3">
+                <label>Correo:</label>
+                <input type="email" class="form-control" placeholder="example@correo.cl" id="correo-name">
+                <label>Sugerencia:</label>
+                <textarea class="form-control" placeholder= "Tu pagina es excelente sigue asi" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-dark">Enviar mensaje</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
