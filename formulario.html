@@ -60,25 +60,32 @@
 
         <form action="m">
             <div class="form-group">
-                <input onfocus="validarFormulario()" type="text" class="form-control" placeholder="ej: 12.345.678-9" id="txtRut" required>
-                <small id="valRut">Ingrese su rut:</small>
+                <label>Ingrese su rut:</label>
+                <input onblur="validarFormulario()" type="text" class="form-control" placeholder="ej: 12.345.678-9" id="txtRut" required>
+                <small id="valRut">Ingrese un rut valido.</small>
                 <br>
-                <input onfocus="validarFormulario()" type="text" class="form-control" placeholder="pepe perez gonzalez" id="txtNombre" required>
-                <small id="valNombre">Ingrese su nombre:</small>
+                <label>Ingrese su nombre:</label>
+                <input onblur="validarFormulario()" type="text" class="form-control" placeholder="pepe perez gonzalez" id="txtNombre" required>
+                <small id="valNombre">Ingrese un nombre valido.</small>
                 <br>
-                <input onfocus="validarFormulario()" type="email" class="form-control" placeholder="pepeperez@correo.com" id="txtCorreo" required>
-                <small id="valCorreo">Ingrese su correo:</small>
+                <label>Ingrese su correo:</label>
+                <input onblur="validarFormulario()" type="email" class="form-control" placeholder="pepeperez@correo.com" id="txtCorreo" required>
+                <small id="valCorreo">Ingrese un correo valido.</small>
+                <br>
+                <label>Ingrese su numero de telefono:</label>
+                <input onblur="validarFormulario()" type="number" class="form-control" placeholder="9 1234 5678" id="txtNumero" required>
+                <small id="valNumero">Ingrese un numero de telefono valido.</small>
+                
             <div>
               <br>
-            <div class="from-group">
-              <small id="valDireccion">Ingrese su direccion:</small>
+            <div class="form-group">
+              <label>Ingrese su direccion:</label>
               <input onblur="validarFormulario()" type="text" class="form-control" placeholder="avenida siempre viva #123" id="txtDireccion" required>
+              <small id="valDireccion">Ingrese una direccion valida.</small>
               <br>
-              <small id="valComuna">Ingrese su comuna:</small>
+              <label>Ingrese su comuna:</label>
               <input onblur="validarFormulario()" type="text" class="form-control" placeholder="Santiago centro" id="txtComuna" required>
-              <br>
-              <small id="valNumero">Ingrese su numero de telefono:</small>
-              <input onblur="validarFormulario()" type="number" class="form-control" placeholder="9 1234 5678" id="txtNumero" required>
+              <small id="valComuna">Ingrese una comuna valida.</small>
             </div>
 
             
