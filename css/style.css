@@ -13,13 +13,13 @@
     font-size: 63px;
 }
 
-.container-fluid{
+/*.container-fluid{
     background-color: rgb(255, 255, 255);
 }
 
 body{
     background-color: white;
-}
+}*/
 
 .card-body{
     text-align: center;
@@ -35,10 +35,11 @@ body{
     column-gap: 10px;
 }
 
-.card-body{
+
+/*.card-body{
     background-color: white;
     border-color: white;
-}
+}*/
 
 .container img{
     width: 100%;
@@ -57,9 +58,9 @@ h3{
     font-family: miFuente;
 }
 
-.card{
+/*.card{
     border-color:white;    
-}
+}*/
 
 .cardflo img{
     height: 250px;
