@@ -84,7 +84,19 @@ label{
     font-family: miFuente;
     font-size: 150%;
 }
-#clockdate{
+.clockdate-wrapper{
     font-family: fantasy;
+    font-size: 150%;
+}
+#temp{
+    font-family: fantasy;
+    font-size: 150%;
+}
+#location{
+    font-family: miFuente;
+    font-size: 150%;
+}
+#estado{
+    font-family: miFuente;
     font-size: 150%;
 }

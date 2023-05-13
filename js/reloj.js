@@ -1,11 +1,11 @@
 function startTime() {
-    var today = new Date();
-    var hr = today.getHours();
-    var min = today.getMinutes();
-    var sec = today.getSeconds();
+    var hoy = new Date();
+    var hr = hoy.getHours();
+    var min = hoy.getMinutes();
+    var seg = hoy.getSeconds();
     min = checkTime(min);
-    sec = checkTime(sec);
-    document.getElementById("clock").innerHTML = hr + " : " + min + " : " + sec;
+    sec = checkTime(seg);
+    document.getElementById("clock").innerHTML = hr + " : " + min + " : " + seg;
     var time = setTimeout(function(){ startTime() }, 500);
 }
 function checkTime(i) {
