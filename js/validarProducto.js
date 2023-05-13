@@ -1,4 +1,4 @@
-document.getElementById("valIdProducto").style.display = "none";
+/* document.getElementById("valIdProducto").style.display = "none";
 document.getElementById("valNombreProducto").style.display = "none";
 document.getElementById("valPrecioProducto").style.display = "none";
 document.getElementById("valTamanoProducto").style.display = "none";
@@ -66,4 +66,49 @@ function validarProducto() {
         document.getElementById("txtContrasena").classList.remove("is-invalid");
         document.getElementById("txtContrasena").classList.add("is-valid");
     }
-}
+} */
+$(function () {
+
+    $("#agregarP").validate({
+        rules: {
+            txtIdProducto: { 
+                required: true, 
+                number: true },
+            txtNombreProducto: { 
+                required: true, 
+                minlength: 3 },
+            txtPrecioProducto: { 
+                required: true, 
+                number: true },
+            txtTamanoProducto: { 
+                required: true, 
+                minlength: 3 },
+            txtCorreo: { 
+                required: true, 
+                email: true },
+            txtContrasena: { 
+                required: true, 
+                minlength: 8 }
+        }, messages: {
+            txtIdProducto: {
+                required: "Este campo es obligatorio",
+                number: "Este campo debe ser numerico"
+            },txtNombreProducto: {
+                required: "Este campo es obligatorio", 
+                minlength: "Este campo debe tener minimo 3 caracteres" 
+            },txtPrecioProducto: {
+                required: "Este campo es obligatorio", 
+                number: "Este campo debe ser numerico" 
+            },txtTamanoProducto: { 
+                required: "Este campo es obligatorio", 
+                minlength: "Este campo debe tener minimo 3 caracteres"
+            },txtCorreo: {
+                required: "Este campo es obligatorio", 
+                email: "Este campo debe ser un correo"
+            },txtContrasena: {
+                required: "Este campo es obligatorio", 
+                minlength: "Este campo debe tener minimo 8 caracteres" }
+        }
+    })
+
+})

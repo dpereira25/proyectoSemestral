@@ -4,7 +4,6 @@
 let lon;
 let lat;
 let temperature = document.querySelector(".temp");
-let summary = document.querySelector(".summary");
 let loc = document.querySelector(".location");
 let icon = document.querySelector(".icon");
 const kelvin = 273.15;
@@ -32,7 +31,6 @@ window.addEventListener("load", () => {
 
                     temperature.textContent =
                         Math.floor(data.main.temp - kelvin) + "°C";
-                    summary.textContent = data.weather[0].description;
                     loc.textContent = data.name + "," + data.sys.country;
                 });
         }

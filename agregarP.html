@@ -63,40 +63,37 @@
     </nav>
     <h1 class="text-center">Agregar Productos</h1>
     <div class="container">
-        <div class="row">
-            <div class="col mt-3    ">
-                <label for="txtIdProducto">Id:</label>
-                <br>
-                <input onblur="validarProducto()" id="txtIdProducto" type="text" class="form-control" required>
-                <small id="valIdProducto">Debe ingresar un Id valido.</small>
-                <br>
-                <label for="txtPrecioProducto">Precio:</label>
-                <input onblur="validarProducto()" id="txtPrecioProducto" type="text" class="form-control" required>
-                <small id="valPrecioProducto">Debe ingresar un precio valido.</small>
-                <br>
-                <label for="txtCorreo">Correo:</label>
-                <input onblur="validarProducto()" id="txtCorreo" type="email" class="form-control" required>
-                <small id="valCorreo">Debe ingresar un correo valido.</small>
+        <form id="agregarP" action="">
+            <div class="row">
+                <div class="col mt-3    ">
+                    <label for="txtIdProducto">Id:</label>
+                    <br>
+                    <input id="txtIdProducto" name="txtIdProducto" type="text" class="form-control">
+                    <br>
+                    <label for="txtPrecioProducto">Precio:</label>
+                    <input id="txtPrecioProducto" type="text" class="form-control">
+                    <br>
+                    <label for="txtCorreo">Correo:</label>
+                    <input id="txtCorreo" type="email" class="form-control">
+                </div>
+                <div class="col mt-3">
+                    <label for="txtNombreProducto">Nombre:</label>
+                    <input id="txtNombreProducto" type="text" class="form-control">
+                    <br>
+                    <label for="txtTamanoProducto">Tamaño:</label>
+                    <select id="txtTamanoProducto" class="form-select" aria-label="Default select example">
+                        <option value="1">Pequeña</option>
+                        <option value="2">Mediana</option>
+                        <option value="3">Grande</option>
+                    </select>
+                    <br>
+                    <label for="txtContrasena">Contraseña:</label>
+                    <input id="txtContrasena" type="text" class="form-control">
+                </div>
+                <button class="btn btn-outline-success mt-3">Agregar</button>
             </div>
-            <div class="col mt-3">
-                <label for="txtNombreProducto">Nombre:</label>
-                <input onblur="validarProducto()" id="txtNombreProducto" type="text" class="form-control" required>
-                <small id="valNombreProducto">Debe ingresar un nombre valido.</small>
-                <br>
-                <label for="txtTamanoProducto">Tamaño:</label>
-                <select onblur="validarProducto()" id="txtTamanoProducto" class="form-select"
-                    aria-label="Default select example">
-                    <option value="1">Pequeña</option>
-                    <option value="2">Mediana</option>
-                    <option value="3">Grande</option>
-                </select>
-                <small id="valTamanoProducto">Debe ingresar un tamaño valido.</small>
-                <br>
-                <label for="txtContrasena">Contraseña:</label>
-                <input onblur="validarProducto()" id="txtContrasena" type="text" class="form-control" required>
-                <small id="valContrasena">Debe ingresar una contraseña valida.</small>
-            </div>
-        </div>
+        </form>
+    </div>
     </div>
 
     <div class="card mt-3">
@@ -136,14 +133,14 @@
             </div>
         </div>
     </div>
-
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
         integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
         crossorigin="anonymous"></script>
-    <script src="js/validarProducto.js"></script>
     <script src="js/darkMode.js"></script>
 </body>
 
