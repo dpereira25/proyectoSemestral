@@ -61,36 +61,39 @@
             </div>
         </div>
     </nav>
+
+
+
     <h1 class="text-center">Agregar Productos</h1>
+
     <div class="container">
         <form id="agregarP" action="">
             <div class="row">
-                <div class="col mt-3    ">
+                <div class="col mt-3">
                     <label for="txtIdProducto">Id:</label>
-                    <br>
                     <input id="txtIdProducto" name="txtIdProducto" type="text" class="form-control">
                     <br>
                     <label for="txtPrecioProducto">Precio:</label>
-                    <input id="txtPrecioProducto" type="text" class="form-control">
+                    <input id="txtPrecioProducto" name="txtPrecioProducto" type="number" class="form-control">
                     <br>
                     <label for="txtCorreo">Correo:</label>
-                    <input id="txtCorreo" type="email" class="form-control">
+                    <input id="txtCorreo" name="txtCorreo" type="email" class="form-control">
                 </div>
                 <div class="col mt-3">
                     <label for="txtNombreProducto">Nombre:</label>
-                    <input id="txtNombreProducto" type="text" class="form-control">
+                    <input id="txtNombreProducto" name="txtNombreProducto" type="text" class="form-control">
                     <br>
                     <label for="txtTamanoProducto">Tamaño:</label>
-                    <select id="txtTamanoProducto" class="form-select" aria-label="Default select example">
+                    <select id="txtTamanoProducto" name="txtTamanoProducto" class="form-select" aria-label="Default select example">
                         <option value="1">Pequeña</option>
                         <option value="2">Mediana</option>
                         <option value="3">Grande</option>
                     </select>
                     <br>
                     <label for="txtContrasena">Contraseña:</label>
-                    <input id="txtContrasena" type="text" class="form-control">
+                    <input id="txtContrasena" name="txtContrasena" type="text" class="form-control">
                 </div>
-                <button class="btn btn-outline-success mt-3">Agregar</button>
+                <button class="btn btn-success mt-3">Agregar</button>
             </div>
         </form>
     </div>
@@ -142,6 +145,7 @@
         integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
         crossorigin="anonymous"></script>
     <script src="js/darkMode.js"></script>
+    <script src="js/validarProducto.js"></script>
 </body>
 
 </html>

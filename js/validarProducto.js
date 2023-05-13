@@ -67,6 +67,7 @@ function validarProducto() {
         document.getElementById("txtContrasena").classList.add("is-valid");
     }
 } */
+
 $(function () {
 
     $("#agregarP").validate({
@@ -80,9 +81,6 @@ $(function () {
             txtPrecioProducto: { 
                 required: true, 
                 number: true },
-            txtTamanoProducto: { 
-                required: true, 
-                minlength: 3 },
             txtCorreo: { 
                 required: true, 
                 email: true },
@@ -99,9 +97,6 @@ $(function () {
             },txtPrecioProducto: {
                 required: "Este campo es obligatorio", 
                 number: "Este campo debe ser numerico" 
-            },txtTamanoProducto: { 
-                required: "Este campo es obligatorio", 
-                minlength: "Este campo debe tener minimo 3 caracteres"
             },txtCorreo: {
                 required: "Este campo es obligatorio", 
                 email: "Este campo debe ser un correo"
