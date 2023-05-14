@@ -90,15 +90,15 @@ label{
 }
 #temp{
     font-family: fantasy;
-    font-size: 150%;
+    font-size: 125%;
 }
 #location{
     font-family: miFuente;
-    font-size: 150%;
+    font-size: 125%;
 }
 #estado{
     font-family: miFuente;
-    font-size: 150%;
+    font-size: 125%;
 }
 
 .error{
@@ -148,3 +148,4 @@ label{
 .text-primary{
     color: black;
 }
+

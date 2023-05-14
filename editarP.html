@@ -9,61 +9,59 @@
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>Agregar productos</title>
+    <title>Editar productos</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logoPagina.png" id="logoPagina" alt="">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/logoPagina.png" id="logoPagina" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="formulario.html">Hazte socio</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Administrador
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="formulario.html">Hazte socio</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Administrador
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="agregarP.html">Agregar producto</a></li>
-                            <li><a class="dropdown-item" href="editarP.html">Editar productos</a></li>
-                            <li><a class="dropdown-item" href="listarP.html">Listar productos</a></li>
-                            <li><a class="dropdown-item" href="envios.html">Envios</a></li>
-                        </ul>
-                    </li>
-                </ul>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="agregarP.html">Agregar producto</a></li>
+              <li><a class="dropdown-item" href="editarP.html">Editar productos</a></li>
+              <li><a class="dropdown-item" href="listarP.html">Listar productos</a></li>
+              <li><a class="dropdown-item" href="envios.html">Envios</a></li>
+            </ul>
+          </li>
+        </ul>
 
 
-                <div class="btn-group">
-                    <a class="btn btn-light" href="pruebaCarrito.html">
-                        <i class="bi bi-cart4">Tu carrito</i>
-                    </a>
-                    <a onclick="darkMode()" id="btnDark" href="#" class="btn btn-dark">
-                        <i class="bi bi-moon"></i>
-                    </a>
-                    <a onclick="lightMode()" id="btnLight" href="#" class="btn btn-light">
-                        <i class="bi bi-brightness-high"></i>
-                    </a>
-                </div>
-            </div>
+        <div class="btn-group">
+          <a class="btn btn-light" href="pruebaCarrito.html">
+            <i class="bi bi-cart4">Tu carrito</i>
+          </a>
+          <a onclick="darkMode()" id="btnDark" href="#" class="btn btn-dark">
+            <i class="bi bi-moon"></i>
+          </a>
+          <a onclick="lightMode()" id="btnLight" href="#" class="btn btn-light">
+            <i class="bi bi-brightness-high"></i>
+          </a>
         </div>
-    </nav>
+      </div>
+    </div>
+  </nav>
 
 
 
-    <h1 class="text-center">Agregar Productos</h1>
+    <h1 class="text-center">Editar Productos</h1>
 
     <div class="container">
         <form id="agregarP" action="">
@@ -74,7 +72,6 @@
                     <br>
                     <label for="txtPrecioProducto">Precio:</label>
                     <input id="txtPrecioProducto" name="txtPrecioProducto" type="number" class="form-control">
-                    <br>
                 </div>
                 <div class="col mt-3">
                     <label for="txtNombreProducto">Nombre:</label>
@@ -88,7 +85,7 @@
                     </select>
                     <br>
                 </div>
-                <button class="btn btn-success mt-3">Agregar</button>
+                <button class="btn btn-success mt-3">Confirmar cambios</button>
             </div>
         </form>
     </div>

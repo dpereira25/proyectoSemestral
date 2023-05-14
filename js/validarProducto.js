@@ -80,13 +80,7 @@ $(function () {
                 minlength: 3 },
             txtPrecioProducto: { 
                 required: true, 
-                number: true },
-            txtCorreo: { 
-                required: true, 
-                email: true },
-            txtContrasena: { 
-                required: true, 
-                minlength: 8 }
+                number: true }
         }, messages: {
             txtIdProducto: {
                 required: "Este campo es obligatorio",
@@ -97,12 +91,7 @@ $(function () {
             },txtPrecioProducto: {
                 required: "Este campo es obligatorio", 
                 number: "Este campo debe ser numerico" 
-            },txtCorreo: {
-                required: "Este campo es obligatorio", 
-                email: "Este campo debe ser un correo"
-            },txtContrasena: {
-                required: "Este campo es obligatorio", 
-                minlength: "Este campo debe tener minimo 8 caracteres" }
+            }
         }
     })
 

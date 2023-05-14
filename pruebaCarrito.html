@@ -33,21 +33,20 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Productos
+              Administrador
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="plantas.html">Plantas</a></li>
-              <li><a class="dropdown-item" href="flores.html">Flores</a></li>
-              <li><a class="dropdown-item" href="bonsai.html">Bonsai</a></li>
-              <li><a class="dropdown-item" href="#">Envios</a></li>
-              <li><a class="dropdown-item" href="agregarP.html">Agregar Productos</a></li>
+              <li><a class="dropdown-item" href="agregarP.html">Agregar producto</a></li>
+              <li><a class="dropdown-item" href="editarP.html">Editar productos</a></li>
+              <li><a class="dropdown-item" href="listarP.html">Listar productos</a></li>
+              <li><a class="dropdown-item" href="envios.html">Envios</a></li>
             </ul>
           </li>
         </ul>
 
 
         <div class="btn-group">
-          <a class="btn btn-light" href="carrito.html">
+          <a class="btn btn-light" href="pruebaCarrito.html">
             <i class="bi bi-cart4">Tu carrito</i>
           </a>
           <a onclick="darkMode()" id="btnDark" href="#" class="btn btn-dark">
@@ -90,7 +89,7 @@
             <div class="row d-flex">
               <div class="col">
                 <div class="cardProductos">
-                  <img src="img/flor1.png" height="300px" class="card-img-top" alt="...">
+                  <img src="img/flor1.png" class="card-img-top fotoCarro" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Girasol</h5>
                     <h6><span class="precio">$5000</span></h6>
@@ -101,7 +100,7 @@
               </div>
               <div class="col">
                 <div class="cardProductos">
-                  <img src="img/flor2.png" height="300px" class="card-img-top" alt="...">
+                  <img src="img/flor2.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Rosa</h5>
                     <h6><span class="precio">$6000</span></h6>
@@ -114,7 +113,7 @@
               </div>
               <div class="col">
                 <div class="cardProductos">
-                  <img src="img/planta3.png" height="300px" class="card-img-top" alt="...">
+                  <img src="img/planta3.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Dollar</h5>
                     <h6><span class="precio">$8000</span></h6>
@@ -125,7 +124,7 @@
               </div>
               <div class="col">
                 <div class="cardProductos">
-                  <img src="img/planta5.png" height="300px" class="card-img-top" alt="...">
+                  <img src="img/planta5.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Ficus</h5>
                     <h6><span class="precio">$10000</span></h6>
@@ -136,7 +135,7 @@
               </div>
               <div class="col">
                 <div class="cardProductos">
-                  <img src="img/bonsai1.png" height="300px" class="card-img-top" alt="...">
+                  <img src="img/bonsai1.png" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Fukinagashi</h5>
                     <h6><span class="precio">$15000</span></h6>
@@ -185,7 +184,27 @@
           <h3 id= "totalCarrito" class="itemCartTotal">Total: 0</h3>
         </div>
         <div class="col d-flex justify-content-end">
-          <button class="btn btn-success">COMPRAR</button>
+          <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            COMPRAR
+          </button>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModal">Estado de compra</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Compra realizada con exito! :D.
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

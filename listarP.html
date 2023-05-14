@@ -5,16 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <title>Carrito</title>
+  <title>Listar productos</title>
 </head>
 
-
 <body>
-
+  <!-- INICIO NAVBAR -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
@@ -34,21 +33,20 @@
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Productos
+              Administrador
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="plantas.html">Plantas</a></li>
-              <li><a class="dropdown-item" href="flores.html">Flores</a></li>
-              <li><a class="dropdown-item" href="bonsai.html">Bonsai</a></li>
-              <li><a class="dropdown-item" href="#">Envios</a></li>
-              <li><a class="dropdown-item" href="agregarP.html">Agregar Productos</a></li>
+              <li><a class="dropdown-item" href="agregarP.html">Agregar producto</a></li>
+              <li><a class="dropdown-item" href="editarP.html">Editar productos</a></li>
+              <li><a class="dropdown-item" href="listarP.html">Listar productos</a></li>
+              <li><a class="dropdown-item" href="envios.html">Envios</a></li>
             </ul>
           </li>
         </ul>
 
 
         <div class="btn-group">
-          <a class="btn btn-light" href="carrito.html">
+          <a class="btn btn-light" href="pruebaCarrito.html">
             <i class="bi bi-cart4">Tu carrito</i>
           </a>
           <a onclick="darkMode()" id="btnDark" href="#" class="btn btn-dark">
@@ -61,65 +59,69 @@
       </div>
     </div>
   </nav>
-
-
+  <!-- FIN NAVBAR -->
 
   <div class="container">
-    <h1>Carrito de Compra</h1>
     <table class="table">
       <thead>
         <tr>
-          <th>Producto</th>
-          <th>Detalle</th>
-          <th>Precio</th>
-          <th>Cantidad</th>
-          <th>Total</th>
+          <th scope="col">Id</th>
+          <th scope="col">Nombre producto</th>
+          <th scope="col">Descripcion</th>
+          <th scope="col">Precio</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><img src="img/bonsai2.png" id="fotoCarrito" alt="..."></td>
-          <td>Producto 1</td>
-          <td>$12.000</td>
-          <td>1</td>
-          <td>$12.000</td>
+          <th scope="row">1</th>
+          <td>Girasol</td>
+          <td>Flor amarilla con centro cafe</td>
+          <td>$5000</td>
         </tr>
         <tr>
-          <td><img src="img/plantacompra.png" id="fotoCarrito" alt="..."></td>
-          <td>Producto 2</td>
-          <td>$13.900</td>
-          <td>2</td>
-          <td>$27.800</td>
+          <th scope="row">2</th>
+          <td>Rosa</td>
+          <td>Flor roja</td>
+          <td>$6000</td>
         </tr>
         <tr>
-          <td><img src="img/plantacompra2.png" id="fotoCarrito" alt="..."></td>
-          <td>Producto 3</td>
-          <td>$5.000</td>
-          <td>3</td>
-          <td>$15.000</td>
+          <th scope="row">3</th>
+          <td>Dollar</td>
+          <td>Planta de color verde</td>
+          <td>$8000</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>Ficus</td>
+          <td>Planta de color verde oscuro</td>
+          <td>$10000</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>Fukinagashi</td>
+          <td>Bonsai solitario</td>
+          <td>$15000</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>Shohin</td>
+          <td>Bonsai tipo bosque</td>
+          <td>$20000</td>
         </tr>
       </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="4" class="text-right">Total</td>
-          <td>$54.800</td>
-        </tr>
-      </tfoot>
     </table>
-    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-      <a href="#" class="btn btn-primary">Pagar</a>
-      <a href="index.html" class="btn btn-primary">Volver</a>
-    </div>
   </div>
 
+
+
+  <!-- INICIO FOOTER -->
   <div class="card mt-3">
     <div class="card-body">
       <h3 class="card-title">¿Quienes somos?</h3>
-      <p class="card-text">Somos un grupo de vecinos amantes de la jardineria al igual que tu dispuestos a ayudar a que
-        tu jardin sea cada dia mas variado y visualmente atractivo.</p>
+      <p class="card-text">Somos un grupo de vecinos amantes de la jardineria al igual que tu dispuestos a ayudar
+        a que tu jardin sea cada dia mas variado y visualmente atractivo.</p>
       <a href="https://www.instagram.com/" class="btn btn-dark bi bi-instagram mt-1"> Instragram</a>
       <a href="https://www.facebook.com/" class="btn btn-dark bi bi-facebook mt-1"> Facebook</a>
-
       <button type="button" class="btn btn-dark bi bi-send-check-fill mt-1" data-bs-toggle="modal"
         data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"> Envianos una sugerencia</button>
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -148,14 +150,17 @@
       </div>
     </div>
   </div>
-
+  <!-- FIN FOOTER -->
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
     integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
     crossorigin="anonymous"></script>
-  <script src="js/darkmode.js"></script>
+  <script src="js/darkMode.js"></script>
+  <script src="js/validarProducto.js"></script>
 </body>
 
 </html>

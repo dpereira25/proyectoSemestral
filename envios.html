@@ -9,12 +9,11 @@
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-  <title>Formulario</title>
-  <script src="js/formulario.js"></script>
+  <title>Listar productos</title>
 </head>
 
-
 <body>
+  <!-- INICIO NAVBAR -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
@@ -60,77 +59,51 @@
       </div>
     </div>
   </nav>
+  <!-- FIN NAVBAR -->
 
+  <!-- Button trigger modal -->
+  <div class="container d-grid gap-2 col-6 mx-auto mt-3">
+    <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      Presioname!
+    </button>
 
-  <div class="container mt-3">
-
-
-    <form action="m">
-      <div class="form-group">
-        <label>Ingrese su rut:</label>
-        <input onblur="validarFormulario()" type="text" class="form-control" placeholder="ej: 12.345.678-9" id="txtRut"
-          required>
-        <small id="valRut">Ingrese un rut valido.</small>
-        <br>
-        <label>Ingrese su nombre:</label>
-        <input onblur="validarFormulario()" type="text" class="form-control" placeholder="pepe perez gonzalez"
-          id="txtNombre" required>
-        <small id="valNombre">Ingrese un nombre valido.</small>
-        <br>
-        <label>Ingrese su correo:</label>
-        <input onblur="validarFormulario()" type="email" class="form-control" placeholder="pepeperez@correo.com"
-          id="txtCorreo" required>
-        <small id="valCorreo">Ingrese un correo valido.</small>
-        <br>
-        <label>Ingrese su numero de telefono:</label>
-        <input onblur="validarFormulario()" type="number" class="form-control" placeholder="9 1234 5678" id="txtNumero"
-          required>
-        <small id="valNumero">Ingrese un numero de telefono valido.</small>
-
-        <div>
-          <br>
-          <div class="form-group">
-            <label>Ingrese su direccion:</label>
-            <input onblur="validarFormulario()" type="text" class="form-control" placeholder="avenida siempre viva #123"
-              id="txtDireccion" required>
-            <small id="valDireccion">Ingrese una direccion valida.</small>
-            <br>
-            <label>Ingrese su comuna:</label>
-            <input onblur="validarFormulario()" type="text" class="form-control" placeholder="Santiago centro"
-              id="txtComuna" required>
-            <small id="valComuna">Ingrese una comuna valida.</small>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModal">Envios</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-
-
-          <div class="botones d-flex justify-content-evenly mt-3">
-            <button type="submit" class="btn btn-dark">enviar</button>
-            <br>
-            <button type="reset" class="btn btn-danger"> borrar</button>
-            <br>
-            <a href="index.html">
-              <button type="button" class="btn btn-dark">volver</button>
-            </a>
+          <div class="modal-body hola">
+            Hola! Esta pagina sigue en desarrollo. Lo sentimos :c.
           </div>
-
-    </form>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
 
+
+  <!-- INICIO FOOTER -->
   <div class="card mt-3">
     <div class="card-body">
       <h3 class="card-title">¿Quienes somos?</h3>
-      <p class="card-text">Somos un grupo de vecinos amantes de la jardineria al igual que tu dispuestos a ayudar a que
-        tu jardin sea cada dia mas variado y visualmente atractivo.</p>
+      <p class="card-text">Somos un grupo de vecinos amantes de la jardineria al igual que tu dispuestos a ayudar
+        a que tu jardin sea cada dia mas variado y visualmente atractivo.</p>
       <a href="https://www.instagram.com/" class="btn btn-dark bi bi-instagram mt-1"> Instragram</a>
       <a href="https://www.facebook.com/" class="btn btn-dark bi bi-facebook mt-1"> Facebook</a>
-
       <button type="button" class="btn btn-dark bi bi-send-check-fill mt-1" data-bs-toggle="modal"
-        data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap"> Envianos una sugerencia</button>
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        data-bs-target="#exModal" data-bs-whatever="@getbootstrap"> Envianos una sugerencia</button>
+      <div class="modal fade" id="exModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h1 class="modal-title fs-5" id="exampleModalLabel">Dejanos tu opinion</h1>
+              <h1 class="modal-title fs-5" id="exampleModal">Dejanos tu opinion</h1>
             </div>
             <div class="modal-body">
               <form>
@@ -152,16 +125,17 @@
       </div>
     </div>
   </div>
-
-
+  <!-- FIN FOOTER -->
+  <script src="js/jquery-3.6.4.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js"
     integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i"
     crossorigin="anonymous"></script>
-  <script src="js/formulario.js"></script>
-  <script src="js/darkmode.js"></script>
+  <script src="js/darkMode.js"></script>
+  <script src="js/validarProducto.js"></script>
 </body>
 
 </html>
